@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Food Cuisine</title>
+</head>
+<body>
+    <header style="background-color:  orange; color: white; padding: 10px 0; text-align: center;">
+        <h1>Korean Food Cuisine</h1>
+        <nav>
+            <ul style="list-style-type: none; margin: 0; padding: 0;">
+                <li style="display: inline; margin: 0 20px;"><a href="#home" style="color: white; text-decoration: chrome: 1px; font-weight: bold;">Home</a></li>
+                <li style="display: inline; margin: 0 20px;"><a href="#dishes" style="color: white; text-decoration: chrome: 1px; font-weight: bold;">Dishes</a></li>
+                <li style="display: inline; margin: 0 20px;"><a href="#contact" style="color: white; text-decoration: chrome: 1px; font-weight: bold;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" style="padding: 20px; margin: 20px; background-color: white; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2>About Us</h2>
+        <h3>we bring the rich, authentic flavors of Korean cuisine to your table. Our menu features traditional dishes made with fresh, high-quality ingredients, prepared with time-honored techniques. From savory BBQ to comforting stews, every meal is a celebration of Korean culinary culture. Whether you're a longtime fan or new to Korean food, we promise a delightful and memorable dining experience. Join us and enjoy the vibrant tastes of Korea right in your neighborhood.</h3>
+    </section>
+
+    <section id="dishes" style="padding: 20px; margin: 20px; background-color: white; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2>Our Dishes</h2>
+        <div class="dish" style="margin: 20px 0;">
+            <img src="C:\Users\DELL\Desktop\korean food cuisine\istockphoto-493066234-612x612.jpg" alt="Bibimbap" style="width: 100%; height: auto; border-radius: 5px;">
+            <h2>Bibimbap</h2>
+            <h3>A delightful mix of rice, vegetables, and beef, topped with a fried egg and spicy gochujang sauce. It is served as a bowl of warm white rice topped with namul (sautéed or blanched seasoned vegetables) and gochujang (chili pepper paste).</h3>
+        </div>
+        <div class="dish" style="margin: 20px 0;">
+            <img src="C:\Users\DELL\Desktop\korean food cuisine\how-to-make-kimchi-269.webp" alt="Kimchi" style="width: 100%; height: auto; border-radius: 5px;">
+            <h2>Kimchi</h2>
+            <h3>fermented vegetables, primarily Napa cabbage, seasoned with spices like garlic, ginger, and red pepper flakes, creating a tangy, spicy, and slightly sour flavor profile that is a staple in Korean cuisine.</h3>
+        </div>
+        <div class="dish" style="margin: 20px 0;">
+            <img src="C:\Users\DELL\Desktop\korean food cuisine\tteokbokki_1-copy-1024x1024.jpg" alt="tteokbokki" style="width: 100%; height: auto; border-radius: 5px;">
+            <h2>tteokbokki</h2>
+            <h3>Tteokbokki are rice cakes simmered in a garlicky, sweet, and spicy gochujang sauce until velvety and tender.</h3>
+        </div>
+        <div class="dish" style="margin: 20px 0;">
+            <img src="C:\Users\DELL\Desktop\korean food cuisine\48-healthy-high-protein-ramyeon-spicy-48.webp" alt="Ramyeon" style="width: 100%; height: auto; border-radius: 5px;">
+            <h2>Ramyeon</h2>
+            <h3> quick-cook noodle dish made from dried noodles, freeze-dried vegetables, and a powdered soup packet,rehydrate the noodles in boiling water eaten with eggs and green onions added.</h3>
+        </div>
+    </section>
+
+    <section id="contact" style="padding: 20px; margin: 20px; background-color: white; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required style="padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px;">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required style="padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px;">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required style="padding: 2px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+            <button type="submit" style="margin-top: 10px; padding: 10px; background-color:orange ; color:white; border: none; border-radius: 5px; cursor: pointer;">Send</button>
+        </form>
+    </section>
+
+    <footer style="text-align: center; padding: 20px 0; background-color: orange; color: white; position: fixed; bottom: 10; width: 100%;">
+        <p>&copy; 2024 Korean Food Cuisine. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+        });
+    </script>
+</body>
+</html>
